@@ -4,10 +4,11 @@ from discord.ext import commands
 from discord import app_commands
 from dotenv import load_dotenv
 
+load_dotenv()
+
 from bot import events
 from bot.commands import gif, roll, temp_channels
 
-load_dotenv()
 
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 SERVER_ID = int(os.getenv("SERVER_ID"))
